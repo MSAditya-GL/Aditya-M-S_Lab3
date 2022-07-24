@@ -47,7 +47,7 @@ public class FindAPair {
 	public void findPairOfGivenSum(Node root, int sum) {
 		HashSet<Integer> set = new HashSet<Integer>();
 		if (!findPair(root, sum, set)) {
-			System.out.println("Nodes are not found. " + "\n");
+			System.out.println("Nodes are not found. " + '\n');
 
 		}
 	}
