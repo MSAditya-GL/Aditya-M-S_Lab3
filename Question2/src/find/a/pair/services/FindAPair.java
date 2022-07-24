@@ -38,18 +38,17 @@ public class FindAPair {
 		if (set.contains(sum - root.nodeData)) {
 			System.out.println("Pair is found (" + (sum - root.nodeData) + ", " + root.nodeData + ")");
 			return true;
-		}
-		else {
+		} else {
 			set.add(root.nodeData);
 		}
 		return findPair(root.rightNode, sum, set);
 	}
-	
+
 	public void findPairOfGivenSum(Node root, int sum) {
 		HashSet<Integer> set = new HashSet<Integer>();
 		if (!findPair(root, sum, set)) {
 			System.out.println("Nodes are not found. " + "\n");
-			
+
 		}
 	}
 }
